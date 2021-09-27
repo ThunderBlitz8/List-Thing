@@ -96,7 +96,7 @@ def fr_list_thing():
             create_file = input("Sauvegardant une liste dans ce fichier écrasera toutes les valeurs existantes. Voulez-vous procéder? O ou N: ")
             create_file.lower()
             if create_file == "o":
-                f = open("list_file.txt", "w")
+                f = open("list_file.txt", "w+")
                 if not list_name:
                     list_name = input("Entrer un nom pour ta liste: ")
                 f.write(list_name + "\n")
