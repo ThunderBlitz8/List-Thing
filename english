@@ -96,7 +96,7 @@ def en_list_thing():
             create_file = input("Saving a list to this file will overwrite any existing data. Do you wish to proceed? Y or N: ")
             create_file.lower()
             if create_file == "y":
-                f = open("list_file.txt", "w")
+                f = open("list_file.txt", "w+")
                 if not list_name:
                     list_name = input("Enter a name for your list: ")
                 f.write(list_name + "\n")
